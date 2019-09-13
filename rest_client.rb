@@ -1,6 +1,7 @@
 require 'rest-client'
 
 def search
+
     puts "Enter search engine url (Optional)"
     url = gets.chomp
 
@@ -24,4 +25,6 @@ def search
 
    puts "URL: #{@response.url}"
 end
+search
+
 search
