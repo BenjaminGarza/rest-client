@@ -1,11 +1,10 @@
 require 'rest-client'
 
-def Search
-
+def search
     puts "Enter search engine url (Optional)"
     url = gets.chomp
 
-    if url == nil
+    if url == ''
        url = 'https://www.bing.com/search'
     end
 
@@ -25,3 +24,4 @@ def Search
 
    puts "URL: #{@response.url}"
 end
+search
